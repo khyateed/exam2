@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Exam 2</title>
+  <link type= "text/css" rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="pics/favicon.ico"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script type="text/javascript">
+    function hide(){
+        var logo = document.getElementById('logo');
+        var colleen = document.getElementById('colleen');
+        colleen.style.display = 'none';
+        logo.setAttribute('style', 'left: 27%;')
+    }  
+    function show(){
+        var logo = document.getElementById('logo');
+        var colleen = document.getElementById('colleen');
+        colleen.style.display = 'inline';
+        logo.setAttribute('style', 'left: 0%;')
+    } 
+  </script>
+</head>
+
+<body>
+  <header>
+  <h1>Khyatee Desai</h1>
+  </header>
+
+  <img id= 'colleen' src= 'images/examPic.JPG' alt='Exam Pic'>
+  <img id= 'logo' src= 'images/UMSI-logo.jpg' alt='UMSI logo'>
+
+  <form >
+     <input type="button" value="Hide Image" onclick='hide()' > 
+     <input type="button" value="Show Image" onclick='show()'>
+  </form>
+
+
+</body>
+</html>
